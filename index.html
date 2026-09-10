@@ -57,9 +57,10 @@ body { color:#333; }
 #publication a[href*="osf.io"] { background:#f0f0ed; color:#3f3f3f!important; border-color:#d8d6ce; }
 #publication a:hover, #publication a:focus { background:#242424; border-color:#242424; color:white!important; }
 #publication li > span, #presentation li > span { color:#70500b!important; }
-#teaching td[colspan] { color:#70500b!important; font-family:'Open Sans',sans-serif; font-size:18px; font-weight:600; }
-#teaching td[colspan] strong { font-family:inherit; font-size:inherit; font-weight:inherit; }
-#teaching td[colspan]:has(strong) { padding:12px 14px!important; background:#f4f3f0; border-left:3px solid #c9c5bc; color:#62605a!important; }
+#teaching td[colspan] { font-family:'Open Sans',sans-serif; font-size:18px; font-weight:600; }
+#teaching .teaching-subheading { padding:12px 14px!important; background:#f4f3f0; border-left:3px solid #c9c5bc; color:#62605a!important; }
+#teaching .teaching-institution { color:#70500b!important; font-weight:600; }
+#teaching .teaching-institution strong { font-family:inherit; font-size:inherit; font-weight:inherit; }
 #teaching td { padding:7px 10px; text-align:left; vertical-align:top; }
 #resources h4 { color:#f5ce75!important; }
 #resources a { color:#ffe2a1!important; text-decoration:underline; text-underline-offset:3px; overflow-wrap:anywhere; }
@@ -383,8 +384,8 @@ a:focus-visible,button:focus-visible { outline:3px solid #a5730e; outline-offset
           <p  style="color:#62605a">Teaching [t/d] deletion. Photo credit: Desen Lin.<br></p>
           <p></p>
        <table style="line-height:30px; max-width: 90%; margin-left: 5%; margin-right: 5%;margin-bottom: 0%;">
-      <tr><td colspan="2" style="color:#063852;">Experience</td></tr>
-      <tr><td colspan="2" style="color:#063852; text-align:left; padding-top:15px;"><strong>California State University, Long Beach</strong></td></tr>
+      <tr><td colspan="2" class="teaching-subheading">Experience</td></tr>
+      <tr><td colspan="2" class="teaching-institution" style="text-align:left; padding-top:15px;"><strong>California State University, Long Beach</strong></td></tr>
       <tr>
         <td style="text-align:left; width:9em"><i>Spring 2027</i></td>
         <td style="text-align:left;">LING620 - Seminar in Phonetics and Phonology</td>
@@ -413,7 +414,7 @@ a:focus-visible,button:focus-visible { outline:3px solid #a5730e; outline-offset
         <td style="text-align:left; width:9em"><i>Fall 2025</i></td>
         <td style="text-align:left;">LING100 - Nature of Language (2 sections)</td>
       </tr>
-      <tr><td colspan="2" style="color:#063852; text-align:left; padding-top:20px;"><strong>University of Pennsylvania</strong></td></tr>
+      <tr><td colspan="2" class="teaching-institution" style="text-align:left; padding-top:20px;"><strong>University of Pennsylvania</strong></td></tr>
        <tr>
         <td style=" text-align:left; width: 9em"><i>Summer 2020</i></td>
         <td>Instructor for LING120 - Introduction to Sociolinguistics. </td>
@@ -434,7 +435,7 @@ a:focus-visible,button:focus-visible { outline:3px solid #a5730e; outline-offset
         <td><br></td>
         <td><br></td>
       </tr>
-      <tr><td colspan="2" style="color:#063852;">Tooling</td></tr>
+      <tr><td colspan="2" class="teaching-subheading">Tooling</td></tr>
       <tr>
         <td colspan="2" style="text-align:left;"><a href="https://linguistics-teaching-labs.github.io/computational-linguistics-lab/">Computational Linguistics Lab</a> (co-created with Desen Lin). Interactive, browser-based activities that make core computational methods inspectable, from tokenization and parsing to embeddings, attention, and evaluation.</td>
       </tr>
